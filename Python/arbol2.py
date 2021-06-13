@@ -17,15 +17,15 @@ class arbol_binario:
         ''' Devuelve el arbol binario correspondiente al hijo derecho del nodo actual.'''
         return self.hijo_der
         pass
+    
+        def get_value(self):
+        '''Devuelve el valor almacenado en el nodo actual.'''
+        return self.root
+        pass
 
     def set_value(self, val=str()):
         '''Almacena el valor del parametro valor en el nodo actual.'''
         self.root = val
-        pass
-
-    def get_value(self):
-        '''Devuelve el valor almacenado en el nodo actual.'''
-        return self.root
         pass
 
     def create_hijo_izq(self, node):
