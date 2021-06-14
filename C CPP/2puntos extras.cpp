@@ -1,3 +1,8 @@
+/*======Contexto======
+*Este programa fue construido para la obtención de dos puntos en la materia
+*Se resolvió y se obtuvieron duchos puntos.
+*/
+
 #include <stdio.h>
 
 int main() {
