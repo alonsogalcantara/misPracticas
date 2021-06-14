@@ -18,7 +18,7 @@ class arbol_binario:
         return self.hijo_der
         pass
     
-        def get_value(self):
+    def get_value(self):
         '''Devuelve el valor almacenado en el nodo actual.'''
         return self.root
         pass
@@ -93,5 +93,4 @@ if __name__ == '__main__':
     arbol_Libro.get_hijo_der().get_hijo_der().create_hijo_izq('Seccion 2.2.1')
     arbol_Libro.get_hijo_der().get_hijo_der().create_hijo_der('Seccion 2.2.2')
 
-    #print('Preorden...')
     print(arbol_Libro.preorden())

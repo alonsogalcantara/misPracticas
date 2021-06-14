@@ -8,13 +8,11 @@ while True:
     try:
         div = division(a, b)
         multi = multiplicacion(a, b)
-        print(div)
-        print(multi)
-    except Exception as e:
+    except Exception as e: #Si el programa encuentra fallos
         print(e, 'Se le va a asignar valores')
         a = 5
         b = 5
-    else:
+    else: #Continua en el dado caso que no encuentre fallos
         print('No error')
         print(div+multi)
         break

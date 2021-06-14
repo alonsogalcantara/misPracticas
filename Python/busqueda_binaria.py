@@ -2,7 +2,7 @@ import random
 
 def burbuja(a = list()):
     '''Ordena de menor a mayor una lista dada
-    Regresa la msima lista ya ordenada'''
+    Regresa la misma lista ya ordenada'''
     for i in range(1, len(a)):
         for j in range(0, len(a)-i):
             if(a[j+1] < a[j]):
