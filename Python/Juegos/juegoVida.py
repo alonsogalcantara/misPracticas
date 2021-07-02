@@ -1,12 +1,16 @@
+#Se declaran la biblioteca a usar
 import sys
 import pygame
 import numpy as np
 import time
 
+#Se inicia Pygame
 pygame.init()
 
+#Se declara el tamaño del tablero
 size = width, height = 800, 800
 
+#Se declara el fondo del tablero
 bg = [25, 25, 25]
 
 nxC = 40
@@ -29,6 +33,7 @@ gameState[0, 3] = 1
 # Control de la ejecuacion
 pauseExect = False
 
+#Se inicia el juego
 while True:
     new_gameState = np.copy(gameState)
     screen.fill(bg)
