@@ -60,4 +60,16 @@ def takeCommand():
         return "None"
     return query
 
-takeCommand()
+if __name__ == "__main__":
+    wishme()
+
+    while True:
+        query = takeCommand().lower()
+        print(query)
+
+        if "time" in query:
+            time()
+        elif "date" in query:
+            date()
+        elif "offline" in query:
+            quit()
