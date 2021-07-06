@@ -1,0 +1,78 @@
+/*Etiquetas globales*/
+body{
+    background: rgb(71, 71, 71);
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+    place-items: center;
+    max-height: 100rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+
+section, header, nav, footer, article, footer, aside, div{
+    margin: 10px;
+    border: black 2px solid;
+}
+
+/*Clases*/
+.header{
+    float: center;
+    width: auto;
+    background: gray;
+}
+
+.col01{
+    max-width: 40%;
+    float: left;
+    background: gray;
+    min-height: 45%;
+    min-width: 25%;    
+}
+
+.col02{
+    max-width: 59%;
+    float: right;
+    background: gray;
+    min-height: 45%;
+    min-width: 67%;
+}
+
+.footer{
+    background: rgb(145, 145, 145);
+    bottom: 0;
+    right: 50%;
+    margin-top: 65rem;
+}
+
+/* Empiezan los colores por las secciones*/
+.head_nav, .sect_header, .sect_nav, .sect_footer, .sect_article{
+    background: rgb(180, 180, 180);
+}
+
+.sect_article_header, .sect_article_p, .sect_article_aside, .sect_article_footer, .sect_article_p_left, .sect_article_footer_bottom{
+    background: rgb(224, 224, 224);
+}
+
+/*Ajustes de las clases*/
+.sect_nav{
+    min-height: 47rem;
+}
+
+.sect_article_p_left{
+    width: 55%;
+    float: left;
+    height: 10rem;
+}
+
+.sect_article_aside{
+    width: 35%;
+    float: right;
+    height: 10rem;
+}
+
+.sect_article_footer_bottom{
+    margin-top: 12rem;
+}
