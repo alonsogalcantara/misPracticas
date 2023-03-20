@@ -1,0 +1,10 @@
+import pytesseract as tess
+from PIL import Image
+
+tess.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+my_image = Image.open("D:\\Git Hub\\text\\img\\Screenshot_2023-03-02_203643.png")
+
+txt = tess.image_to_string(my_image)
+
+print('El texto en la imagen es: '+txt)
