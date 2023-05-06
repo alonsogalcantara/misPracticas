@@ -22,4 +22,4 @@ imgs_dict = dict(zip(aux_list, file_list))
 aux_imgs_dict=dict(sorted(imgs_dict.items()))
 
 list_named = " ".join(aux_imgs_dict.values())
-os.system(f"img2pdf {list_named} -o out.pdf")
+os.system(f"py -m img2pdf {list_named} -o out.pdf")
