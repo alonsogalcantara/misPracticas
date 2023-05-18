@@ -7,6 +7,42 @@ class Tamagotchi:
         self.hunger = 0
         self.happiness = 0
         self.health = 100
+        self.normal_frame = '''
+        (__)
+        (oo)
+   /------\/    
+ * / |    ||
+    ~~   ~~
+    ~~   ~~
+    ~~   ~~'''
+        self.eating_frame = '''
+        (__)
+        (oo)
+/------\/    
+* / |    ||
+    ~~   ~~    @@@@
+    ~~   ~~   ()()
+    ~~   ~~   VVVV'''
+        self.sleep_frame = '''
+        (__)
+        (oo)
+/------\/    
+* / |    ||
+    ~~   ~~   ZzZz
+    ~~   ~~
+    ~~   ~~
+    ~~   ~~'''
+        
+        self.play_frame = '''
+        (__)
+        (oo)
+/------\/    
+* / |    ||
+    ~~   ~~   /|'\'\
+    ~~   ~~  / '\
+    ~~   ~~
+    ~~   ~~'''
+        
 
     def __str__(self):
         '''
@@ -29,6 +65,7 @@ class Tamagotchi:
         '''
         self.hunger -= random.randint(5, 10)
         self.health += random.randint(10, 20)
+        print(self.eating_frame)
 
     def play(self):
         '''
@@ -38,6 +75,7 @@ class Tamagotchi:
         '''
         self.happiness += random.randint(6, 9)
         self.hunger -= random.randint(4, 8)
+        print(self.play_frame)
 
     def sleep(self):
         '''
@@ -49,6 +87,7 @@ class Tamagotchi:
         self.hunger += random.randint(5, 8)
         self.happiness += random.randint(4, 9)
         self.health -= random.randint(5, 10)
+        print(self.sleep_frame)
 
     def tick(self):
         '''
@@ -78,8 +117,12 @@ def main():
     # Play with the Tamagotchi
     while tamagotchi.is_alive():
         print(tamagotchi)
-        action = input("What do you want to do? (feed, play, sleep, or quit): ")
+        
+        list_options = ['feed', 'play', 'sleep']
+        
+        action = random.choice(list_options)
 
+        print(f'Elegiste: {action}')
         if action == "feed":
             tamagotchi.feed()
         elif action == "play":
